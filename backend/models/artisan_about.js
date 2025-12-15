@@ -21,15 +21,18 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
+        field: "id_a_propos",
       },
       artisan_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
         unique: true,
+        field: "id_artisan",
       },
       content: {
         type: DataTypes.TEXT,
         allowNull: false,
+        field: "contenu",
       },
     },
     {

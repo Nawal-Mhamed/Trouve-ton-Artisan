@@ -18,15 +18,18 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
+        field: "id_site",
       },
       address: {
         type: DataTypes.STRING(255),
         allowNull: false,
+        field: "adresse",
       },
       artisan_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
         unique: true,
+        field: "id_artisan",
       },
     },
     {
