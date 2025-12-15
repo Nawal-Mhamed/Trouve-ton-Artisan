@@ -24,14 +24,17 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
+        field: "id_specialite",
       },
       speciality: {
         type: DataTypes.STRING(50),
         allowNull: false,
+        field: "specialite",
       },
       category_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
+        field: "id_categorie",
       },
     },
     {

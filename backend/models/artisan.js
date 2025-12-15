@@ -44,10 +44,12 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
+        field: "id_artisan",
       },
       name: {
         type: DataTypes.STRING(50),
         allowNull: false,
+        field: "nom",
       },
       email: {
         type: DataTypes.STRING(255),
@@ -68,10 +70,12 @@ module.exports = (sequelize, DataTypes) => {
       speciality_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
+        field: "id_specialite",
       },
       city_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
+        field: "id_ville",
       },
     },
     {

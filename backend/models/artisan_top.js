@@ -24,6 +24,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.DATEONLY,
         allowNull: false,
         defaultValue: sequelize.literal("CURRENT_DATE"),
+        field: "mois",
       },
     },
     {

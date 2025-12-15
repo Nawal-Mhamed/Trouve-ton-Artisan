@@ -19,11 +19,13 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
+        field: "id_ville",
       },
       city: {
         type: DataTypes.STRING(100),
         allowNull: false,
         unique: true,
+        field: "ville",
       },
     },
     {

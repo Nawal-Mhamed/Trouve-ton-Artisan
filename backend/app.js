@@ -1,41 +1,31 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+require("dotenv").config();
+const express = require("express");
+const { sequelize } = require("./models");
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+const indexRoutes = require("./routes/index");
+const artisanRoutes = require("./routes/artisan");
 
-var app = express();
+const app = express();
+const PORT = process.env.PORT || 4000;
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
-
-app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use("/", indexRoutes);
+app.use("/artisans", artisanRoutes);
 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
+// Exemple de route test
+app.get("/api/test", (req, res) => {
+  res.json({ message: "Backend fonctionne !" });
 });
 
-// error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
-});
-
-module.exports = app;
+sequelize
+  .authenticate()
+  .then(() => {
+    console.log("Connexion à la base réussie.");
+    app.listen(PORT, () => {
+      console.log(`Serveur Express démarré sur le port ${PORT}`);
+    });
+  })
+  .catch((err) => {
+    console.error("Impossible de se connecter à la base :", err);
+  });

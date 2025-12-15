@@ -34,6 +34,7 @@ module.exports = (sequelize, DataTypes) => {
           model: "artisans",
           key: "id",
         },
+        field: "id_artisan",
       },
       position: {
         type: DataTypes.INTEGER,
