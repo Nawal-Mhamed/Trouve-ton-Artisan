@@ -52,13 +52,15 @@ module.exports = {
         {
           model: Speciality,
           as: "speciality",
+          where: { category_id: categoryId },
           include: [
             {
               model: Category,
               as: "category",
-              where: { category_id: categoryId },
+              attributes: ["category"],
             },
           ],
+          attributes: ["speciality"],
         },
         { model: City, as: "city", attributes: ["city"] },
       ],
