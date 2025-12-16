@@ -1,0 +1,65 @@
+// ==============================================================================================
+// BUTTONS & LINKS - Styles
+// ==============================================================================================
+// This file contains all styles for:
+//  - Buttons (info, danger, warning, success, disabled)
+//  - Links (navbar, menu, text, body, footer)
+//
+// ==============================================================================================
+
+@use "../base/variables" as *;
+@use "../mixins" as *;
+
+// ----------------------------------------------------------------------------------------------
+// 1. BUTTONS
+// ----------------------------------------------------------------------------------------------
+// Automatically adapted to the class defined in HTML.
+// $type: default, ghost, full-ghost
+// $variant: info, danger, warning, success, disabled
+// Classes:
+//  btn-{type}-{variant}
+//  btn-{type}-{variant}-with-icon
+//  btn-{type}-{variant}-icon
+//
+
+$btn-types: default, ghost, full-ghost;
+$btn-variants: info, danger, warning, success, disabled;
+
+@each $type in $btn-types {
+  @each $variant, $value in $btn-variants {
+    .btn-#{$type}-#{$variant} {
+      @include btn($type, $variant, false, true);
+    }
+
+    .btn-#{$type}-#{$variant}-with-icon {
+      @include btn($type, $variant, true, true);
+    }
+
+    .btn-#{$type}-#{$variant}-icon {
+      @include btn($type, $variant, true, false);
+    }
+  }
+}
+
+// ----------------------------------------------------------------------------------------------
+// 2. LINKS
+// ----------------------------------------------------------------------------------------------
+// Automatically adapted to the class defined in HTML.
+// $type: default, ghost, full-ghost
+// $variant: info, danger, warning, success, disabled
+// Classes:
+//  btn-{type}-{variant}
+//  btn-{type}-{variant}-with-icon
+//  btn-{type}-{variant}-icon
+
+$link-variants: navbar, menu, text, classic, text, card, footer, body, button;
+
+@each $variant in $link-variants {
+  .link-#{$variant} {
+    @include link($variant, false);
+  }
+
+  .link-icon-#{$variant} {
+    @include link($variant, true);
+  }
+}

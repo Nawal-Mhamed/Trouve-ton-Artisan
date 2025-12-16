@@ -1,0 +1,248 @@
+// ==============================================================================================
+// VARIABLES - Colors & Breakpoints
+// ==============================================================================================
+// This file contains all global variables:
+//  - Colors
+//  - Breakpoints for responsive design
+//
+// ==============================================================================================
+
+// -------------------------------------------------------------
+// 1. COLORS
+// -------------------------------------------------------------
+
+// Blue
+$primary: #00497c;
+$primary-75: rgba(0, 73, 124, 0.75);
+$primary-50: rgba(0, 73, 124, 0.5);
+$primary-25: rgba(0, 73, 124, 0.25);
+
+$secondary: #0074c7;
+$secondary-75: rgba(0, 116, 199, 0.75);
+$secondary-50: rgba(0, 116, 139, 0.5);
+$secondary-25: rgba(0, 116, 139, 0.25);
+
+$tertiary: #86b7fe;
+$tertiary-75: rgba(134, 183, 254, 0.75);
+$tertiary-50: rgba(134, 183, 254, 0.5);
+$tertiary-25: rgba(134, 183, 254, 0.25);
+
+//Red
+$dark-red: #81353e;
+$dark-red-75: rgba(129, 53, 62, 0.75);
+$dark-red-50: rgba(129, 53, 62, 0.5);
+$dark-red-25: rgba(129, 53, 62, 0.25);
+
+$red: #cd2c2e;
+$red-75: rgba(205, 44, 46, 0.75);
+$red-50: rgba(205, 44, 46, 0.5);
+$red-25: rgba(205, 44, 46, 0.25);
+
+// Yellow
+$dark-yellow: #928037;
+$dark-yellow-75: rgba(146, 128, 55, 0.75);
+$dark-yellow-50: rgba(146, 128, 55, 0.5);
+$dark-yellow-25: rgba(146, 128, 55, 0.25);
+
+$yellow: #eec220;
+$yellow-75: rgba(238, 194, 32, 0.75);
+$yellow-50: rgba(238, 194, 32, 0.5);
+$yellow-25: rgba(238, 194, 32, 0.25);
+
+$orange: #e09600;
+$orange-75: rgba(224, 150, 0, 0.75);
+$orange-50: rgba(224, 150, 0, 0.5);
+$orange-25: rgba(224, 150, 0, 0.25);
+
+// Green
+$dark-green: #5c7b59;
+$dark-green-75: rgba(92, 123, 89, 0.75);
+$dark-green-50: rgba(92, 123, 89, 0.5);
+$dark-green-25: rgba(92, 123, 89, 0.25);
+
+$green: #82b864;
+$green-75: rgba(130, 184, 100, 0.75);
+$green-50: rgba(130, 184, 100, 0.5);
+$green-25: rgba(130, 184, 100, 0.25);
+
+// Dark & Gray
+$black: #353d4d;
+$black-75: rgba(53, 61, 77, 0.75);
+$black-50: rgba(53, 61, 77, 0.5);
+$black-25: rgba(53, 61, 77, 0.25);
+
+$dark-gray: #7e7e7e;
+$dark-gray-75: rgba(126, 126, 126, 0.75);
+$dark-gray-50: rgba(126, 126, 126, 0.5);
+$dark-gray-25: rgba(126, 126, 126, 0.25);
+$gray-blue: #b7dadf;
+$gray-blue-75: rgba(183, 209, 223, 0.75);
+$gray-blue-50: rgba(183, 209, 223, 0.5);
+$gray-blue-25: rgba(183, 209, 223, 0.25);
+
+// Light
+$white: #fff;
+$light-blue: #f1f8fc;
+
+// -------------------------------------------------------------
+// 2. BUTTON COLORS - Map
+// -------------------------------------------------------------
+
+$btn-colors: (
+  info: (
+    base: $secondary,
+    hover: $primary,
+  ),
+  danger: (
+    base: $red,
+    hover: $dark-red,
+  ),
+  warning: (
+    base: $yellow,
+    hover: $dark-yellow,
+  ),
+  success: (
+    base: $green,
+    hover: $dark-green,
+  ),
+  disabled: (
+    base: $dark-gray,
+  ),
+);
+
+// -------------------------------------------------------------
+// 3. LINK COLORS - Map
+// -------------------------------------------------------------
+
+$link-colors: (
+  navbar: (
+    base: $black,
+    hover: $black,
+    focus: $secondary,
+  ),
+  menu: (
+    base: $black,
+    hover: $secondary,
+    focus: $secondary,
+  ),
+  classic: (
+    base: $secondary,
+    hover: $primary,
+    focus: $secondary,
+  ),
+  text: (
+    base: $black,
+    hover: $primary,
+    focus: $secondary,
+  ),
+  card: (
+    base: $secondary,
+    hover: $primary,
+    focus: $secondary,
+  ),
+  footer: (
+    base: $white,
+    hover: $white,
+  ),
+  body: (
+    base: $primary,
+    hover: $primary,
+    focus: $secondary,
+  ),
+  button: (
+    base: $primary,
+    hover: $secondary,
+    background-hover: $light-blue,
+    focus: $secondary,
+  ),
+);
+
+// -------------------------------------------------------------
+// 3. PLACEHOLDER COLORS - Map
+// -------------------------------------------------------------
+
+$input-colors: (
+  default: (
+    border: $secondary,
+    fill: $light-blue,
+    focus: $yellow,
+  ),
+  warning: (
+    border: $orange,
+    fill: $yellow-25,
+    focus: $secondary,
+  ),
+  error: (
+    border: $red,
+    fill: $red-25,
+    focus: $secondary,
+  ),
+);
+
+// -------------------------------------------------------------
+// 4. BOOTSTRAP BREAKPOINTS OVERRIDE
+// -------------------------------------------------------------
+
+$grid-breakpoints: (
+  xs: 0,
+  // Mobile
+  sm: 768px,
+  // Tablet portrait
+  md: 1024px,
+  // Tablet landscape + small desktop
+  lg: 1200px,
+  // Desktop
+  xl: 1440px // Large desktop,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+);
+
+$container-max-widths: (
+  sm: 720px,
+  md: 960px,
+  lg: 1140px,
+  xl: 1320px,
+);
+
+$bp-sm: 768px;
+$bp-md: 1024px;
+$bp-lg: 1200px;
+$bp-xl: 1440px;
+
+// -------------------------------------------------------------------------
+// 5. BOOTSTRAP SPACERS OVERRIDE
+// -------------------------------------------------------------------------
+// Override Bootstrap's default $spacers map to customize spacing utilities.
+// All spacing utilities such as p-1, mx-3, gap-2, etc. will use these values.
+//
+// NOTE:
+// - Keys must remain numeric.
+// - Values should use rem for proper scalability.
+// ------------------------------------------------------------------------
+
+$spacer: 1rem; // 10px
+
+$spacers: (
+  0: 0,
+  1: 0.4rem,
+  // 4px
+  2: 0.8rem,
+  // 8px
+  3: 1.6rem,
+  // 16px
+  4: 2.4rem,
+  // 24px
+  5: 3.2rem,
+  // 32px
+  6: 4rem,
+  // 40px
+  7: 4.8rem,
+  // 48px
+  8: 6.4rem,
+  // 64px
+  9: 8rem // 80px,,,,,,,,,,,,,,,,,,,,,,,,,
+);
+
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../node_modules/bootstrap/scss/maps";
+@import "../../../../node_modules/bootstrap/scss/utilities";

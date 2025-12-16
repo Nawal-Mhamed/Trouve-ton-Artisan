@@ -1,0 +1,99 @@
+// ==============================================================================================
+// TYPOGRAPHY - Text styles
+// ==============================================================================================
+// This file contains all text styles for:
+//  - Headers
+//  - Text
+//  - Buttons & Links
+//
+// ==============================================================================================
+
+@use "./variables" as *;
+@use "../mixins" as *;
+
+// ----------------------------------------------------------------------------------------------
+// 1. HEADERS
+// ----------------------------------------------------------------------------------------------
+
+h1 {
+  @include text-style(bold, 3rem, normal, 1.2);
+  @include desktop {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  @include text-style(bold, 2.5rem, normal, 1.4);
+  @include desktop {
+    font-size: 3rem;
+  }
+}
+
+h3 {
+  @include text-style(500, 2.2rem, normal, 1.4);
+}
+
+h4 {
+  @include text-style(500, 1.4rem, normal, 1);
+}
+
+h5,
+h6 {
+  @include text-style(400, 1.4rem, normal, 1);
+}
+
+// ----------------------------------------------------------------------------------------------
+// 2. TEXT
+// ----------------------------------------------------------------------------------------------
+
+body {
+  @include text-style(400, 1.6rem, normal, 1.625);
+}
+
+.bold {
+  @include text-style(bold, 1.6rem, normal, 1.625);
+}
+
+.medium {
+  @include text-style(500, 1.6rem, normal, 1.625);
+}
+
+.small {
+  @include text-style(500, 1.4rem, normal, 1.4);
+}
+
+figcaption {
+  @include text-style(normal, 1.4rem, italic, 1);
+}
+
+.subtitle {
+  @include text-style(500, 1.2rem, normal, 1);
+}
+
+.strong {
+  @include text-style(bolder, 1.6rem, normal, 1.625);
+}
+
+// ----------------------------------------------------------------------------------------------
+// 3. Buttons & Links
+// ----------------------------------------------------------------------------------------------
+
+.button {
+  @include text-style(normal, 1.6rem, normal, 1.4);
+}
+
+.link {
+  @include text-style(normal, 1.8rem, normal, 1.625);
+  @include desktop {
+    font-size: 1.6rem;
+    line-height: 1.4rem;
+  }
+}
+
+.link-bold {
+  @include text-style(500, 1.8rem, normal, 1.625);
+  @include desktop {
+    font-size: 1.6rem;
+    line-height: 1.4rem;
+  }
+}
