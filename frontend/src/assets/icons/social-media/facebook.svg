@@ -1,0 +1,15 @@
+<svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_29_430)">
+<mask id="mask0_29_430" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" preserveAspectRatio="xMinYMin meet">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H32V32H0V0Z" fill="currentColor"/>
+</mask>
+<g mask="url(#mask0_29_430)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M32 16.0992C32 7.208 24.8368 0 16 0C7.16161 0 -0.00158691 7.208 -0.00158691 16.0992C-0.00158691 24.1344 5.84961 30.7936 13.4992 32.0016V20.752H9.43521V16.096H13.4992V12.5536C13.4992 8.5184 15.888 6.2896 19.5424 6.2896C21.2944 6.2896 23.1248 6.6048 23.1248 6.6048V10.5664H21.1072C19.12 10.5664 18.4992 11.8064 18.4992 13.08V16.1008H22.9376L22.2272 20.7536H18.4992V32C26.1488 30.7952 32 24.1344 32 16.0992Z" fill="currentColor"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_29_430">
+<rect width="32" height="32" fill="currentColor"/>
+</clipPath>
+</defs>
+</svg>

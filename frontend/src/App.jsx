@@ -4,7 +4,8 @@ import router from "./router";
 function App() {
   return (
     <>
-      <RouterProvider router={router} />;
+      <RouterProvider router={router} />
+      <button className="btn btn-primary">Bouton</button>
     </>
   );
 }

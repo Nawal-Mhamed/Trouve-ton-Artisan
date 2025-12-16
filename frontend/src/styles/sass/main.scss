@@ -1,2 +1,33 @@
-@import "variables";
-@import "mixins";
+/* ------------------------------------------------------------ */
+/* MAIN STYLES IMPORT FILE */
+/* ------------------------------------------------------------ */
+
+/* 1. Variables & Mixins */
+
+@forward "./base/variables";
+@forward "./mixins";
+
+/* 2. Reset */
+
+@forward "./base/reset";
+
+/* 3. Typography */
+
+@forward "./base/typography";
+
+/* 4. Components */
+
+/* Buttons */
+@use "./components/buttons";
+
+/* Form fields */
+
+@use "./components/form-fields";
+
+/* 5. Layouts */
+
+/* Header */
+@use "./layout/header";
+
+/* Footer */
+@use "./layout/footer";
