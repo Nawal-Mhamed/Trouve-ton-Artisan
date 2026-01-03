@@ -180,69 +180,10 @@ $input-colors: (
 );
 
 // -------------------------------------------------------------
-// 4. BOOTSTRAP BREAKPOINTS OVERRIDE
+// 4. BREAKPOINTS
 // -------------------------------------------------------------
-
-$grid-breakpoints: (
-  xs: 0,
-  // Mobile
-  sm: 768px,
-  // Tablet portrait
-  md: 1024px,
-  // Tablet landscape + small desktop
-  lg: 1200px,
-  // Desktop
-  xl: 1440px // Large desktop,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-);
-
-$container-max-widths: (
-  sm: 720px,
-  md: 960px,
-  lg: 1140px,
-  xl: 1320px,
-);
 
 $bp-sm: 768px;
 $bp-md: 1024px;
 $bp-lg: 1200px;
 $bp-xl: 1440px;
-
-// -------------------------------------------------------------------------
-// 5. BOOTSTRAP SPACERS OVERRIDE
-// -------------------------------------------------------------------------
-// Override Bootstrap's default $spacers map to customize spacing utilities.
-// All spacing utilities such as p-1, mx-3, gap-2, etc. will use these values.
-//
-// NOTE:
-// - Keys must remain numeric.
-// - Values should use rem for proper scalability.
-// ------------------------------------------------------------------------
-
-$spacer: 1rem; // 10px
-
-$spacers: (
-  0: 0,
-  1: 0.4rem,
-  // 4px
-  2: 0.8rem,
-  // 8px
-  3: 1.6rem,
-  // 16px
-  4: 2.4rem,
-  // 24px
-  5: 3.2rem,
-  // 32px
-  6: 4rem,
-  // 40px
-  7: 4.8rem,
-  // 48px
-  8: 6.4rem,
-  // 64px
-  9: 8rem // 80px,,,,,,,,,,,,,,,,,,,,,,,,,
-);
-
-@import "../../../../node_modules/bootstrap/scss/functions";
-@import "../../../../node_modules/bootstrap/scss/variables";
-@import "../../../../node_modules/bootstrap/scss/mixins";
-@import "../../../../node_modules/bootstrap/scss/maps";
-@import "../../../../node_modules/bootstrap/scss/utilities";
