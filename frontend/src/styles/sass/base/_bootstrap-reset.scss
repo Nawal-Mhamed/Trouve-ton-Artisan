@@ -1,0 +1,49 @@
+// -------------------------------------------------------------------------
+// 4. BOOTSTRAP BREAKPOINTS AND SPACERS OVERRIDE
+// -------------------------------------------------------------------------
+// Override Bootstrap's default breakpoints and spacers map to customize breakpoints
+// and spacing utilities.
+// All grid-breakpoints (xs, sm, md, lg, xl) will use these values.
+// All spacing utilities such as p-1, mx-3, gap-2, etc. will use these values.
+//
+// NOTE:
+// - Keys must remain numeric.
+// - Values should use rem for proper scalability.
+// ------------------------------------------------------------------------
+
+@use "../../../../node_modules/bootstrap/scss/bootstrap" with (
+  $grid-breakpoints: (
+    xs: 0,
+    // Mobile
+    sm: 768px,
+    // Tablet portrait
+    md: 1024px,
+    // Tablet landscape + small desktop
+    lg: 1200px,
+    // Desktop
+    xl: 1440px // Large desktop,,,,,,
+  ),
+
+  $container-max-widths: (
+    sm: 720px,
+    md: 960px,
+    lg: 1140px,
+    xl: 1320px,
+  ),
+  $spacer: 1rem,
+
+  // 10px
+  $spacers:
+    (
+      0: 0,
+      1: 0.4rem,
+      2: 0.8rem,
+      3: 1.6rem,
+      4: 2.4rem,
+      5: 3.2rem,
+      6: 4rem,
+      7: 4.8rem,
+      8: 6.4rem,
+      9: 8rem,
+    )
+);

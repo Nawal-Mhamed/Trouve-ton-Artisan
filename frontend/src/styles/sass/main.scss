@@ -2,18 +2,21 @@
 /* MAIN STYLES IMPORT FILE */
 /* ------------------------------------------------------------ */
 
-/* 1. Variables & Mixins */
+/* Bootstrap */
 
-@forward "./base/variables";
-@forward "./mixins";
+@use "./base/bootstrap-reset";
+
+/* 1. Variables & Mixins */
+@use "./base/variables";
+@use "./mixins";
 
 /* 2. Reset */
 
-@forward "./base/reset";
+@use "./base/reset";
 
 /* 3. Typography */
 
-@forward "./base/typography";
+@use "./base/typography";
 
 /* 4. Components */
 
